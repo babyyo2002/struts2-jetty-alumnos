@@ -5,6 +5,7 @@ import java.util.Date;
 public class InvoiceBean {
 
     private String subject;
+    private double amount;
     private Date dateFrom;
     private Date dateTo;
 
@@ -31,4 +32,7 @@ public class InvoiceBean {
     public void setSubject(String subject) {
         this.subject = subject;
     }
+
+    public double getAmount() {return amount; }
+    public void setAmount(double amount) {this.amount = amount; }
 }

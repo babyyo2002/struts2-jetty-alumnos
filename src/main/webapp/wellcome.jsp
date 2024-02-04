@@ -11,7 +11,11 @@
 
 <body>
 
-    <h1>Resumen de factura: </h1>
-
+    <h1>Resumen de factura: ${invoiceBean.getSubject()}</h1>
+    <p><s:text name="form.amount.message"/> ${invoiceBean.getAmount()}</p>
+    <p>IVA (21%): ${(invoiceBean.getAmount() * 0.21)} €</p>
+    <p><strong>Total con IVA:</strong> ${(invoiceBean.getAmount() * 0.21)+invoiceBean.getAmount()} €</p>
+    <p><s:text name="form.fromDate.message"/> ${invoiceBean.getDateFrom()}</p>
+    <p><s:text name="form.toDate.message"/> ${invoiceBean.getDateTo()}</p>
 </body>
 </html>
