@@ -11,11 +11,21 @@
 
 <body>
 
-    <h1>Resumen de factura: ${invoiceBean.getSubject()}</h1>
-    <p><s:text name="form.amount.message"/> ${invoiceBean.getAmount()}</p>
-    <p>IVA (21%): ${(invoiceBean.getAmount() * 0.21)} €</p>
-    <p><strong>Total con IVA:</strong> ${(invoiceBean.getAmount() * 0.21)+invoiceBean.getAmount()} €</p>
-    <p><s:text name="form.fromDate.message"/> ${invoiceBean.getDateFrom()}</p>
-    <p><s:text name="form.toDate.message"/> ${invoiceBean.getDateTo()}</p>
+    <h1>Resumen del alumno: ${alumnoBean.getdni()}</h1>
+    <p>${dataToSave}</p>
+
+    <p><s:text name="form.nombre.message"/> ${alumnoBean.getnombre()}</p>
+    <p><s:text name="form.apellido1.message"/> ${alumnoBean.getapelliod1()}</p>
+    <p><s:text name="form.apellido2.message"/> ${alumnoBean.getapellido2()}</p>
+    <p><s:text name="form.direccion.message"/> ${alumnoBean.getnombre()}</p>
+    <p><s:text name="form.codigoPostal.message"/> ${alumnoBean.getnombre()}</p>
+    <p><s:text name="form.poblacion.message"/> ${alumnoBean.getnombre()}</p>
+    <p><s:text name="form.telefono.message"/> ${alumnoBean.getnombre()}</p>
+    <p><s:text name="form.curso.message"/> ${alumnoBean.getnombre()}</p>
+    <p><s:text name="form.clase.message"/> ${alumnoBean.getnombre()}</p>
+
+
+
+
 </body>
 </html>
